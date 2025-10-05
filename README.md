@@ -7,11 +7,9 @@ This project demonstrates automated model training, scalable API deployment, and
 
 # The Architecture
 
- 1. Data Source (Kaggle): The original 90GB dataset of historical 
- weather data for over 6,000 Indian cities, hosted on Kaggle.
+ 1. Data Source ([Kaggle](https://www.kaggle.com/datasets/mukeshdevrath007/indian-5000-cities-weather-data): The original 90GB dataset of historical  weather data for over 6,000 Indian cities, hosted on Kaggle.
 
- 2. The Model Factory (Kaggle Notebook): A robust Python pipeline  
- that runs on Kaggle's free compute. It automatically:
+ 2. The Model Factory (Kaggle Notebook): A robust Python pipeline  that runs on Kaggle's free compute. It automatically:
 
    - Discovers all city data files.
 
@@ -23,7 +21,7 @@ This project demonstrates automated model training, scalable API deployment, and
 
    - Uploads the model artifacts to the Model Hub.
 
-3. The Model Registry (Hugging Face Model Hub): A central repository (Shreyansh1718/Weather-prediction-model) that stores thousands of individual, version-controlled models, one for each city.
+3. The Model Registry ([Hugging Face Model Hub](https://huggingface.co/Shreyansh1718/Weather-prediction-model): A central repository (Shreyansh1718/Weather-prediction-model) that stores thousands of individual, version-controlled models, one for each city.
 
 4. The Serving API (Hugging Face Docker Space): A lightweight, scalable FastAPI server running in a Docker container. It serves predictions on-demand:
 
@@ -31,14 +29,13 @@ This project demonstrates automated model training, scalable API deployment, and
 
 - It caches the model in memory for subsequent fast predictions.
 
-5. The Frontend UI (Hugging Face Gradio Space): A separate, interactive web application built with Gradio. It provides a user-friendly interface that calls the live API to deliver forecasts.
+5. The Frontend UI ([Hugging Face Gradio Space](https://shreyansh1718-weather-prediction.hf.space): A separate, interactive web application built with Gradio. It provides a user-friendly interface that calls the live API to deliver forecasts.
 
 # Technology Stack 
 
 - Data Science & ML: Pandas, Scikit-learn, XGBoost
 
-- MLOps & Backend: FastAPI, Docker, Uvicorn, Hugging Face Hub 
-  (Model Registry & Git-based deployment)
+- MLOps & Backend: FastAPI, Docker, Uvicorn, Hugging Face Hub (Model Registry & Git-based deployment)
 
 - Frontend: Gradio
 
@@ -51,7 +48,7 @@ This project is built on a modern, decoupled architecture, where each component 
 
 [Kaggle Dataset] -> [Kaggle Training Pipeline] -> [HF Model Hub] -> [FastAPI Server] -> [Gradio UI]
 
-1. Data Source (Kaggle): The process starts with the 90GB "Indian 5000 Cities Weather Data" dataset, which is accessed directly within the Kaggle environment to ensure maximum speed and avoid resource limits.
+1. Data Source ([Kaggle](https://www.kaggle.com/datasets/mukeshdevrath007/indian-5000-cities-weather-data): The process starts with the 90GB "Indian 5000 Cities Weather Data" dataset, which is accessed directly within the Kaggle environment to ensure maximum speed and avoid resource limits.
 
 2. The Model Factory (Kaggle Notebook): A robust Python script runs in a Kaggle Notebook to act as an automated training pipeline. For each of the 6,000+ cities, it:
 
@@ -80,7 +77,7 @@ This project is built on a modern, decoupled architecture, where each component 
 
  - Challenge: API Rate Limiting: The initial training pipeline hit the Hugging Face Hub's rate limit of 128 commits/hour.
 
- - Solution: I re-architected the pipeline to use a batch upload strategy. The script now trains all models for a given batch locally and then performs a single, efficient upload, reducing hundreds of API calls               to just one.
+ - Solution: I re-architected the pipeline to use a batch upload strategy. The script now trains all models for a given batch locally and then performs a single, efficient upload, reducing hundreds of API calls to just one.
 
 - Challenge: Dependency Conflicts: The Kaggle and other cloud environments had pre-installed libraries that conflicted with the project's dependencies.
 
