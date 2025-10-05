@@ -44,9 +44,9 @@ The system is composed of the following modular components:
 5. **Frontend UI ([Gradio Space](https://shreyansh1718-weather-prediction.hf.space))**  
    - User-friendly Gradio web interface, interacting live with the API for real-time forecasts.
 
-> **Tip:** Add an architecture diagram here for quick visual understanding.
 
----
+---<img width="1686" height="694" alt="diagram-export-10-5-2025-12_01_14-PM" src="https://github.com/user-attachments/assets/8315ea06-20a5-4b97-a6ed-21e2760afdac" />
+
 
 ## Technology Stack
 
