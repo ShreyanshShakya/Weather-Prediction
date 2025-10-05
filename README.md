@@ -19,7 +19,6 @@ This project provides a robust, scalable, machine-learning weather forecasting s
 - [Features](#features)
 - [API Usage](#api-usage)
 - [Live Demo](#live-demo)
-- [Local Setup](#local-setup)
 - [Contributing](#contributing)
 - [Contact](#contact)
 
