@@ -154,3 +154,8 @@ curl -X 'POST' \
   "predicted_avg_temp_celsius": 17.25
 }
 ```
+
+# Live Demo
+
+[![User Interface](https://shreyansh1718-weather-prediction.hf.space)
+
