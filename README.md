@@ -31,7 +31,7 @@ The system is composed of the following modular components:
 1. **Data Source ([Kaggle Indian Weather Dataset](https://www.kaggle.com/datasets/mukeshdevrath007/indian-5000-cities-weather-data))**  
    - 90GB of historical weather data for 6,000+ Indian cities, mounted directly in Kaggle for efficient access.
 
-2. **Model Factory ([Kaggle Notebook](modeltraining.ipynb)**  
+2. **Model Factory ([Kaggle Notebook](modeltraining.ipynb))**  
    - Automated Python pipeline to discover, train, and batch-upload city-specific XGBoost models, making the process resumable and efficient.
 
 3. **Model Registry ([Hugging Face Model Hub](https://huggingface.co/Shreyansh1718/Weather-prediction-model))**  
