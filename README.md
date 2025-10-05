@@ -1,5 +1,5 @@
 
-# End-to-End Weather Forecasting System: A Scalable MLOps Pipeline for 6,000+ Cities
+# End-to-End Weather Forecasting System: A Scalable MLOps Pipeline for 4,000+ Cities
 
 This repository contains the complete code for an end-to-end machine learning project that predicts the next day's average temperature. The project trains an XGBoost model on historical weather data and deploys it as a robust, live user interface.
 
@@ -157,5 +157,5 @@ curl -X 'POST' \
 
 # Live Demo
 
-[![User Interface](https://shreyansh1718-weather-prediction.hf.space)
+[User Interface](https://shreyansh1718-weather-prediction.hf.space)
 
