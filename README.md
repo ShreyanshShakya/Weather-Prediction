@@ -1,6 +1,6 @@
 # Weather Forecasting System: Scalable MLOps Pipeline for 4,000+ Cities
 
-[![License](https://img.shields.io/github/license/ShreyanshShakya/Weather-Prediction)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/docker-ready-blue)]()
 
 ## Project Overview
