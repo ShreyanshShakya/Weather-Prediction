@@ -44,9 +44,8 @@ The system is composed of the following modular components:
 5. **Frontend UI ([Gradio Space](https://shreyansh1718-weather-prediction.hf.space))**  
    - User-friendly Gradio web interface, interacting live with the API for real-time forecasts.
 
-
----<img width="1686" height="694" alt="diagram-export-10-5-2025-12_01_14-PM" src="https://github.com/user-attachments/assets/8315ea06-20a5-4b97-a6ed-21e2760afdac" />
-
+<img width="1686" height="694" alt="diagram-export-10-5-2025-12_01_14-PM" src="https://github.com/user-attachments/assets/8315ea06-20a5-4b97-a6ed-21e2760afdac" />
+---
 
 ## Technology Stack
 
@@ -165,23 +164,6 @@ curl -X 'POST' \
 ## Live Demo
 
 - [User Interface (Gradio Space)](https://shreyansh1718-weather-prediction.hf.space)
-
----
-
-## Local Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ShreyanshShakya/Weather-Prediction.git
-   cd Weather-Prediction
-   ```
-2. **Build and run with Docker:**
-   ```bash
-   docker build -t weather-prediction .
-   docker run -p 8000:8000 weather-prediction
-   ```
-3. **Access the API at:**  
-   [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
