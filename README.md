@@ -22,11 +22,6 @@
 
 ## Project Overview
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Docker](https://img.shields.io/badge/docker-ready-blue)]()
-
-## Project Overview
-
 This project provides a robust, scalable, machine-learning weather forecasting system that predicts the next day's average temperature for thousands of Indian cities. It demonstrates an end-to-end MLOps workflow, from massive data processing to live API and UI deployment, using XGBoost, containerization, and cloud-native services.
 
 ---
