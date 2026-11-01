@@ -1,4 +1,26 @@
-# Weather Forecasting System: Scalable MLOps Pipeline for 4,000+ Cities
+# Scalable Weather Forecasting System
+
+> End-to-end machine-learning pipeline for next-day average-temperature prediction across thousands of Indian cities, from large-scale data preparation and city-specific XGBoost models to API serving and an interactive Gradio interface.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-ML-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![XGBoost](https://img.shields.io/badge/Model-XGBoost-EC6B23)](https://xgboost.readthedocs.io/)
+[![Docker](https://img.shields.io/badge/Deployment-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+
+## Project at a glance
+
+| Area | Details |
+|---|---|
+| Problem | Next-day average-temperature forecasting |
+| Coverage | Thousands of Indian cities |
+| Data processing | Large historical weather dataset (approximately 90 GB, as used in the project workflow) |
+| Modeling | City-specific XGBoost regression models |
+| Model distribution | Hugging Face Hub |
+| API | FastAPI |
+| Interface | Gradio |
+| Packaging | Docker |
+
+## Project Overview
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/docker-ready-blue)]()
@@ -29,7 +51,7 @@ This project provides a robust, scalable, machine-learning weather forecasting s
 The system is composed of the following modular components:
 
 1. **Data Source ([Kaggle Indian Weather Dataset](https://www.kaggle.com/datasets/mukeshdevrath007/indian-5000-cities-weather-data))**  
-   - 90GB of historical weather data for 6,000+ Indian cities, mounted directly in Kaggle for efficient access.
+   - Large-scale historical weather data covering thousands of Indian cities, mounted directly in Kaggle for efficient access.
 
 2. **Model Factory ([Kaggle Notebook](modeltraining.ipynb))**  
    - Automated Python pipeline to discover, train, and batch-upload city-specific XGBoost models, making the process resumable and efficient.
